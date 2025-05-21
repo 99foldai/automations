@@ -1,9 +1,3 @@
-# Automations
-
-
-
-https://99foldai.github.io/automations/auto_newsletter/auto_newsletter.html
-
 # Automations  
 
 ### [Automated newsletter](https://99foldai.github.io/automations/auto_newsletter/auto_newsletter.html)            
