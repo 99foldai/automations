@@ -1,0 +1,273 @@
+---
+params:
+  title: "Auto newsletter generator"   
+  subtitle: "Reddit, Apify, Google Drive, ChatGPT, Google Sheets, Mailchimp, Slack"    
+  author: "99fold"
+  email: "matt@99foldai.com"
+  social: "@99foldai"
+  date: "April 2025"    
+  primary: "#284e36"
+  secondary: "#c3c3c3"
+  header1: "Summary"
+  header2: "Integrations"
+  header3: "Workflow"
+  header4: "Example"
+  here: "r"
+  imgdir: "img"
+  img1: "reddit.jpg"
+  img2: "linkedin.png"
+  img3: "slack.png"
+  img4: "apify.png"
+  img5: "apify2.png"
+  img6: "clickup.png"
+  github: ""      
+output: 
+  # pdf_document:
+  html_document:
+    theme: "cosmo"
+    css: css/style.css
+    includes:
+      # before_body: html/header.html # reactivate once header img sizing is fixed  
+      after_body: html/footer.html
+---
+
+<!-- quicksand font -->
+
+<!-- <link rel="stylesheet"href="//fonts.googleapis.com/css?family=Quicksand:300,400,600,700&amp;lang=en"/> -->
+
+<!-- css for tabs -->
+
+```{=html}
+<style type="text/css">
+
+.nav>li>a{
+    position: relative;
+    display: block;
+    padding: 10px 15px;
+}
+
+.nav-pills>li>a:hover{
+  background: `r params$primary`;
+  color: `r params$secondary`;
+  opacity:0.7;
+}
+
+.nav-pills>li>a:focus, .nav-pills>li.active>a, .nav-pills>li.active>a:hover, .nav-pills>li.active>a:focus {
+  background: `r params$primary`;
+  background-color: `r params$primary`;
+}
+
+</style>
+```
+
+
+```{r, set-options, echo = F, cache = T, message=F}
+options(width=25,tinytex.verbose = TRUE, width.cutoff=25)
+knitr::opts_chunk$set(
+ eval = F, # run all code
+ echo = F, # show code chunks in output 
+ tidy = T, # make output as tidy
+ message = F,  # mask all messages
+ warning = F, # mask all warnings 
+ size="small", # set code chunk size,
+ tidy.opts=list(width.cutoff=25) # set width of code chunks in output
+)
+# tinytex::install_tinytex()
+# require(tinytex)
+# install.packages("pacman")
+# require(pacman)
+
+# knitr::read_chunk(here::here("r","make_map.R"))
+# source(here::here("r","make_gitignore.R"))
+# source(here::here("r","make_plot_stacked.R"))
+```
+
+\  
+\  
+
+# [`r params$title`]{style="font-size: 200%;"}
+# [`r params$subtitle`]{style="font-size: 150%;"}
+
+\  
+\      
+
+<center> 
+[`r params$author` | `r params$email` | `r params$social`]{style="font-size: 120%; color:`r params$secondary`;"} 
+
+<!-- feather icons -->
+<script src="https://unpkg.com/feather-icons"></script>
+
+<p>
+    
+    <!-- calendly -->
+    <a href="https://urldefense.com/v3/__https://www.linkedin.com/in/mmalishev/__;!!LBk0ZmAmG_H4m2o!oVrnGVTq4VaGa7cN1gDQyR-O-uL_Yd8JSrkae11vsa2I21g1vV9KxKx0txpwzaf2r62aEVKCC1cHORxRiSg$"> <!-- calendly -->
+        <i data-feather="mail"></i> 
+    </a>
+    <!-- linkedin -->
+    <a href="https://urldefense.com/v3/__https://www.linkedin.com/in/mmalishev/__;!!LBk0ZmAmG_H4m2o!oVrnGVTq4VaGa7cN1gDQyR-O-uL_Yd8JSrkae11vsa2I21g1vV9KxKx0txpwzaf2r62aEVKCC1cHORxRiSg$"> <!-- linkedin -->
+        <i data-feather="linkedin"></i> 
+    </a>
+    <a href="">  <!-- instagram -->
+        <i data-feather="instagram"></i> 
+    </a>
+</p>
+
+<!-- feather icons -->
+<script>
+feather.replace()
+</script>
+
+&nbsp;
+
+
+</center>
+
+\  
+
+---
+
+\  
+
+<!-- #### Refs   -->
+<!-- Apify: https://console.apify.com/actors/oAuCIx3ItNrs2okjQ/runs/5I1jMq1JPXb79H4AU#output           -->
+<!-- Napkin url: https://app.napkin.ai/page/CgoiCHByb2Qtb25lEiwKBFBhZ2UaJDRlMWI1MGIyLTk0MzAtNDVlMS1iYzMyLTFkYTY5ZGRhZDM5Mg?s=1   -->
+
+
+<!-- ------------------------------------------------------------------------ -->
+
+<!-- # `r params$header1` {.tabset .tabset-fade .tabset-pills} -->
+<!-- tab1 -->
+<!-- ## [Plots]{style="color:`r params$secondary`;"} # add custom css styling to tabs-->
+
+# `r params$header1`
+
+Managing social posts through web scraping, AI-driven personalisation, database management, and social sharing.  
+
+1. Webscrape Social Posts    
+Initiate the web scraping process to gather social media posts.    
+
+2. Upload to Database      
+Store the scraped data in a centralized database for easy access and management.  
+
+3. Auto Schedule New Weekly Webscrape    
+Set up an automated schedule to perform web scraping on a weekly basis, ensuring the database is regularly updated with fresh content.    
+
+4. Use GPT to Summarize and Write Content    
+Utilize GPT (Generative Pre-trained Transformer) to analyze the scraped posts and generate summaries or new content based on the data.    
+
+5. Update Database    
+Incorporate the newly generated content back into the database for future reference and use.    
+
+6. Download Content to Drive    
+Download the updated content from the database to a local drive for backup and offline access.  
+
+7. Share to Team + Customers      
+Distribute the content to team members and customers, ensuring everyone has access to the latest information.  
+
+\  
+
+---
+
+\  
+
+# `r params$header2`  
+
+\  
+Low-friction integration with your existing apps, workflow, and systems      
+
+<!-- ##### Side by side image -->
+
+```{r, echo = FALSE, out.width = "20%", fig.align = "center", out.extra = "style = 'display: inline;'", fig.show='hold', fig.align='center'}
+knitr::include_graphics(c(
+  paste(params$imgdir,params$img1,sep = "/"),
+  paste(params$imgdir,params$img1,sep = "/"),
+  paste(params$imgdir,params$img1,sep = "/"),
+  paste(params$imgdir,params$img1,sep = "/"),
+  paste(params$imgdir,params$img1,sep = "/"),
+  paste(params$imgdir,params$img1,sep = "/"),
+  paste(params$imgdir,params$img1,sep = "/")
+  ))
+```
+
+\  
+
+---
+
+\  
+
+# `r params$header3`
+
+<!-- left justified image -->
+<div class = "row">
+  <div class = "col-md-8"> <!-- img  -->
+  <center><img class = "remove-border" 
+  src=`r stringr::str_subset(list.files(params$imgdir, full.names = T), params$img4)`> 
+  </center>
+</div>
+  <div class = "col-md-4"> 
+  <br>
+
+> Set and forget: automated regular scheduling for scraping latest in your field    
+
+  </div>
+</div>
+
+\    
+
+<!-- right justified image -->
+<div class = "row">
+  <div class = "col-md-4 right-just"> <!-- img  -->
+  <br><br>     
+
+> Dynamic and responsive completion endpoints     
+
+> <em>'Hey GPT, complete this repetitive task for me, generate the report, then notify my team ... '</em>  
+
+<br>     
+</div>
+  <div class = "col-md-8"> 
+  <center><img class = "remove-border" 
+  src=`r stringr::str_subset(list.files(params$imgdir, full.names = T), params$img5)`> 
+  </center>
+  </div>
+</div>
+
+\  
+
+<!-- left justified image -->
+<div class = "row">
+  <div class = "col-md-8"> <!-- img  -->
+  <center><img class = "remove-border" 
+  src=`r stringr::str_subset(list.files(params$imgdir, full.names = T), params$img6)`> 
+  </center>
+</div>
+  <div class = "col-md-4"> 
+  <br>
+
+> Integrate your existing database management app such as Clickup, Airtable, Google Sheets    
+
+  </div>
+</div>
+
+\  
+
+---
+
+\    
+
+# `r params$header4`
+
+Example of automated workflow (replace with your own tasks/apps)      
+
+![](img/flow.png)  
+
+
+
+
+#
+
+
+
+
+
+

@@ -1,0 +1,54 @@
+---
+title: "Untitled"
+output: html_document
+date: "2025-05-17"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## R Markdown
+
+**Screening qu's for onboarding new clients**     
+
+What's the most repetitive task that eats up your time during your day and week (e.g. regular emailing or admin, client nurturing, cold outreach)?    
+
+Rough guess of hours per week you spend on any of the following tasks - invoicing, database work, client management, booking calls, team comms, regular emailing, or anything specific to your work   
+
+Admin, including emails, task scheduling, report writing, file management, etc
+
+
+- what's the most repetitive task that eats up your time during your day and week?    
+- hours spent per week on invoicing, database work, client management, booking calls   
+- cost per week on invoicing, database work, client management, booking calls    
+- how many inquiries to you get per week?      
+- topline revenue p/m    
+- how many clients would you turn away?   
+- what's the LTV of a new client? (Multiple this by how many new leads a new automation can bring)      
+- what is the current cost of running this particular operation we're discussing? 
+- offer free 7-day trial of automation (use in cold outreach too)  
+- connect free trial to calender invite: trial period > calendar for next call > reminder emails every day until next call     
+
+
+- Drive additional revenue  
+- Operational leverage - Free up workflows to maximise time    
+- Bespoke solutions to identify areas that aren't maximising performance or that are wasting time   
+- Not replacing methods but amplifying current workflows by automating things  
+- Create outsized value with a solution- and painpoint- based approach  
+
+- discuss project needs - inputs, outputs, constraints, logic steps (pitch this) 
+
+
+
+
+## ROI calculators  
+- https://www.skool.com/ai-automations-by-kia/ive-built-a-tool-that-identifies-quick-wins-and-high-roi-automation-use-cases-in-any-industry
+- https://pipe-pulse-roi-calculator.lovable.app/    
+
+# Notes  
+
+- ROI calculator  
+- Stats on hours saved p/w etc     
+
+
