@@ -175,7 +175,7 @@ Distribute the content to team members and customers, ensuring everyone has acce
 \  
 Low-friction integration with your existing apps, workflow, and systems      
 
-<!-- ##### Side by side image -->
+<!-- ##### Side by side image -->  
 
 ```{r, echo = FALSE, out.width = "20%", fig.align = "center", out.extra = "style = 'display: inline;'", fig.show='hold', fig.align='center'}
 knitr::include_graphics(c(
