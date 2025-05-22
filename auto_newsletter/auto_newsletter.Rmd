@@ -190,7 +190,7 @@ knitr::include_graphics(c(
   ))
 ```
 
-\  
+\    
 
 ---
 
