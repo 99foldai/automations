@@ -15,6 +15,7 @@ params:
   here: "r"
   imgdir: "img"
   app1: "reddit.jpg"
+  app2: "slack.jpg"
   img1: "apify.png"
   img2: "apify2.png"
   img3: "clickup.png"
@@ -28,7 +29,8 @@ output:
     theme: "cosmo"
     css: css/style.css
     includes:
-      # before_body: html/header.html # reactivate once header img sizing is fixed  
+      # reactivate once header img sizing is fixed  
+      # before_body: html/header.html 
       after_body: html/footer.html
 ---
 
@@ -181,10 +183,10 @@ Low-friction integration with your existing apps, workflow, and systems
 ```{r, echo = FALSE, out.width = "20%", fig.align = "center", out.extra = "style = 'display: inline;'", fig.show='hold', fig.align='center'}
 knitr::include_graphics(c(
   paste(params$imgdir,params$app1,sep = "/")
-  # paste(params$imgdir,params$app1,sep = "/"),
-  # paste(params$imgdir,params$app1,sep = "/"),
-  # paste(params$imgdir,params$app1,sep = "/"),
-  # paste(params$imgdir,params$app1,sep = "/")
+  ,paste(params$imgdir,params$app2,sep = "/")
+  # ,paste(params$imgdir,params$app1,sep = "/")
+  # ,paste(params$imgdir,params$app1,sep = "/")
+  # ,paste(params$imgdir,params$app1,sep = "/")
   ))
 ```
 
