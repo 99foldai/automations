@@ -135,10 +135,6 @@ feather.replace()
 <!-- Apify: https://console.apify.com/actors/oAuCIx3ItNrs2okjQ/runs/5I1jMq1JPXb79H4AU#output           -->
 <!-- Napkin url: https://app.napkin.ai/page/CgoiCHByb2Qtb25lEiwKBFBhZ2UaJDRlMWI1MGIyLTk0MzAtNDVlMS1iYzMyLTFkYTY5ZGRhZDM5Mg?s=1   -->
 
-napkin script  
-
-Get LinkedIn profile data by scanning the QR code from a person’s LinkedIn profile with your phone (Telegram bot) to update your database (Airtable, Clickup, Google Sheets), auto draft a personalised email/doc with your own copy/CTA, and save to the cloud (Clickup, Notion, Google Drive).
-
 <!-- ------------------------------------------------------------------------ -->
 
 <!-- # `r params$header1` {.tabset .tabset-fade .tabset-pills} -->
@@ -147,9 +143,20 @@ Get LinkedIn profile data by scanning the QR code from a person’s LinkedIn pro
 
 # `r params$header1`
 
-Get LinkedIn profile data by scanning the QR code from a person's LinkedIn profile with your phone (Telegram bot) to update your database (Airtable, Clickup, Google Sheets), auto draft a personalised email/doc with your own copy/CTA, and save to the cloud (Clickup, Notion, Google Drive).      
+Extracting LinkedIn profile data using a QR code scanner (Telegram, Whatsapp), updating a mailing list database (Clickup, Airtable, Google Sheets), auto draft a personalised email/doc with your own copy/CTA, and save to the cloud (Clickup, Notion, Google Drive), then initiate an auto email campaign from the client database.   
 
-1.     
+The workflow is designed to streamline the process of collecting and managing client data by enhancing efficiency in outreach efforts using automated app integrations and auto scheduling.  
+
+
+
+1. Wait for QR code scan from mobile (Telegram, Whatsapp)  
+2. Scan QR Code: Use your phone to scan the QR code from a person’s LinkedIn profile.   
+3. Extract LinkedIn Data: Retrieve the relevant data from the scanned profile.  
+4. Update Database: Automatically update your database (Airtable, Clickup, Google Sheets) with the extracted information.  
+5. Auto Draft Email/Doc: Generate a personalized email or document using your own copy and call-to-action (CTA).  
+6. Save to Cloud: Store the drafted email/document in the cloud (Clickup, Notion, Google Drive).  
+7. Auto email client from database: Set up automated email schedule         
+
 
 \  
 
@@ -185,9 +192,9 @@ knitr::include_graphics(c(
 <!-- left justified image -->
 <div class = "row">
   <div class = "col-md-8"> <!-- img  -->
-  <center><img class = "remove-border" 
+  <center>
+  <img class = "remove-border" 
   src=`r stringr::str_subset(list.files(params$imgdir, full.names = T), params$img1)`> 
-  </center>
 </div>
   <div class = "col-md-4"> 
   <br>
@@ -243,7 +250,7 @@ knitr::include_graphics(c(
 Example of automated workflow (replace with your own tasks/apps)      
 
 <center>
-![](img/flow.png)    
+![](img/flow2.png)    
 </center>
 
 
