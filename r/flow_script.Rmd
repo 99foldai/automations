@@ -1,0 +1,17 @@
+---
+title: "Napkin script"
+output: html_document
+date: "2025-05-21"
+---
+
+### Napkin script  
+
+Create a flow diagram with clear arrows and boxes from the components using the following components. Include the step-by-step copy used in the diagram as separate text below the final diagram in clear steps. Set 'Comfortaa' as the default font in the workspace for all text copy, flow diagams, and generated images. For the summary, use a voice and tone of an informative product designer that is highlighting the steps and pathways of the flow diagram in an practical and concise manner  
+
+Finally, add a Tasks heading with three concise and appealing tasks this workflow can perform (bullet points). Then add a Benefits heading with three concise bullet points of the benefits to someone buying this product but pitched to improve their business and operations e.g. increase revenue, improve customer experience, etc.    
+
+
+```
+<paste new script here e.g. Make template, tried and tested social media hook, etc >  
+"Get LinkedIn profile data by scanning the QR code from a person’s LinkedIn profile with your phone (Telegram bot) to update your database (Airtable, Clickup, Google Sheets), auto draft a personalised email/doc with your own copy/CTA, and save to the cloud (Clickup, Notion, Google Drive).      
+Title: LinkedIn profile scraper to mailing list database via QR code reader  

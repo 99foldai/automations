@@ -14,12 +14,14 @@ params:
   header4: "Example"
   here: "r"
   imgdir: "img"
-  img1: "reddit.jpg"
-  img2: "linkedin.png"
-  img3: "slack.png"
-  img4: "apify.png"
-  img5: "apify2.png"
-  img6: "clickup.png"
+  app1: "reddit.jpg"
+  app2: "slack.jpg"
+  img1: "apify.png"
+  img2: "apify2.png"
+  img3: "clickup.png"
+  img4: ""
+  img5: ""
+  img6: ""
   github: ""      
 output: 
   # pdf_document:
@@ -27,7 +29,8 @@ output:
     theme: "cosmo"
     css: css/style.css
     includes:
-      # before_body: html/header.html # reactivate once header img sizing is fixed  
+      # reactivate once header img sizing is fixed  
+      # before_body: html/header.html 
       after_body: html/footer.html
 ---
 
@@ -179,17 +182,15 @@ Low-friction integration with your existing apps, workflow, and systems
 
 ```{r, echo = FALSE, out.width = "20%", fig.align = "center", out.extra = "style = 'display: inline;'", fig.show='hold', fig.align='center'}
 knitr::include_graphics(c(
-  paste(params$imgdir,params$img1,sep = "/"),
-  paste(params$imgdir,params$img1,sep = "/"),
-  paste(params$imgdir,params$img1,sep = "/"),
-  paste(params$imgdir,params$img1,sep = "/"),
-  paste(params$imgdir,params$img1,sep = "/"),
-  paste(params$imgdir,params$img1,sep = "/"),
-  paste(params$imgdir,params$img1,sep = "/")
+  paste(params$imgdir,params$app1,sep = "/")
+  ,paste(params$imgdir,params$app2,sep = "/")
+  # ,paste(params$imgdir,params$app1,sep = "/")
+  # ,paste(params$imgdir,params$app1,sep = "/")
+  # ,paste(params$imgdir,params$app1,sep = "/")
   ))
 ```
 
-\  
+\    
 
 ---
 
@@ -201,7 +202,7 @@ knitr::include_graphics(c(
 <div class = "row">
   <div class = "col-md-8"> <!-- img  -->
   <center><img class = "remove-border" 
-  src=`r stringr::str_subset(list.files(params$imgdir, full.names = T), params$img4)`> 
+  src=`r stringr::str_subset(list.files(params$imgdir, full.names = T), params$img1)`> 
   </center>
 </div>
   <div class = "col-md-4"> 
@@ -227,7 +228,7 @@ knitr::include_graphics(c(
 </div>
   <div class = "col-md-8"> 
   <center><img class = "remove-border" 
-  src=`r stringr::str_subset(list.files(params$imgdir, full.names = T), params$img5)`> 
+  src=`r stringr::str_subset(list.files(params$imgdir, full.names = T), params$img2)`> 
   </center>
   </div>
 </div>
@@ -238,11 +239,11 @@ knitr::include_graphics(c(
 <div class = "row">
   <div class = "col-md-8"> <!-- img  -->
   <center><img class = "remove-border" 
-  src=`r stringr::str_subset(list.files(params$imgdir, full.names = T), params$img6)`> 
+  src=`r stringr::str_subset(list.files(params$imgdir, full.names = T), params$img3)`> 
   </center>
 </div>
   <div class = "col-md-4"> 
-  <br>
+  <br>  
 
 > Integrate your existing database management app such as Clickup, Airtable, Google Sheets    
 
