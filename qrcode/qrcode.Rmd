@@ -1,7 +1,7 @@
 ---
 params:
   title: "LinkedIn profile scraper to mailing list database via QR code reader"       
-  subtitle: "Telegram, Uniqode, LinkedIn, Google Sheets, Google Docs"        
+  subtitle: "Telegram, Uniqode, LinkedIn, Notion, Google Docs"        
   author: "99fold"
   email: "matt@99foldai.com"
   social: "@99foldai"
@@ -14,8 +14,11 @@ params:
   header4: "Example"
   here: "r"
   imgdir: "img"
-  app1: #"telegram.png"
-  app2: "linkedin.png"
+  app1: "telegram.png"
+  app2: "li.png"
+  app3: "notion.png"
+  app4: "gsheet.png"
+  app5: "gdrive.png"
   img1: "linkedin.png"
   img2: "telegram2.png"
   img3: "clickup.png"
@@ -143,7 +146,7 @@ feather.replace()
 
 # `r params$header1`
 
-Extracting LinkedIn profile data using a QR code scanner (Telegram, Whatsapp), updating a mailing list database (Clickup, Airtable, Google Sheets), auto draft a personalised email/doc with your own copy/CTA, and save to the cloud (Clickup, Notion, Google Drive), then initiate an auto email campaign from the client database.   
+Extracting LinkedIn profile data using a QR code scanner (Telegram, Whatsapp), updating a mailing list database (Notion, Clickup, Airtable), auto draft a personalised email/doc with your own copy/CTA, and save to the cloud (Google Drive), then initiate an auto email campaign from the client database.   
 
 The workflow is designed to streamline the process of collecting and managing client data by enhancing efficiency in outreach efforts using automated app integrations and auto scheduling.  
 
@@ -167,17 +170,20 @@ The workflow is designed to streamline the process of collecting and managing cl
 # `r params$header2`  
 
 \  
-Low-friction integration with your existing apps, workflow, and systems      
+Low-friction integration with your existing apps, workflow, and systems        
+\  
+
+
 
 <!-- ##### Side by side image -->
 
 ```{r, echo = FALSE, out.width = "20%", fig.align = "center", out.extra = "style = 'display: inline;'", fig.show='hold', fig.align='center'}
 knitr::include_graphics(c(
   paste(params$imgdir,params$app1,sep = "/")
-  # paste(params$imgdir,params$app1,sep = "/"),
-  # paste(params$imgdir,params$app1,sep = "/"),
-  # paste(params$imgdir,params$app1,sep = "/"),
-  # paste(params$imgdir,params$app1,sep = "/")
+  ,paste(params$imgdir,params$app2,sep = "/")
+  ,paste(params$imgdir,params$app3,sep = "/")
+  ,paste(params$imgdir,params$app4,sep = "/")
+  ,paste(params$imgdir,params$app5,sep = "/")
   ))
 ```
 
