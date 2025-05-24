@@ -1,20 +1,31 @@
 # Automations  
 
-## Automated newsletter  
-### [Check out the automation](https://99foldai.github.io/automations/auto_newsletter/auto_newsletter.html)              
+## [Automated newsletter campaign](https://99foldai.github.io/automations/auto_newsletter/auto_newsletter)              
 
 #### Tasks      
 - Auto invoice reminders to pending unpaid client invoices      
 - Linked to your own database/system    
-- Auto update invoices with status linked to payment account e.g. Stripe      
-\  
+- Auto update invoices with status linked to payment account e.g. Stripe        
 
 #### Benefits        
 - Save you $1000's per year in lost invoicing       
 - Eliminate manual checking and human error with invoice retrieval and collection     
 
-
 ******
+
+
+## [LinkedIn profile scraper](https://99foldai.github.io/automations/qrcode/qrcode)                  
+
+#### Tasks  
+- Auto collect LinkedIn profile data using QR codes      
+- Generate automated and personalised outreach emails and profiles     
+- Store, manage, and analyse contact information in a centralised cloud database     
+
+#### Benefits  
+- Streamline outreach process to convert more leads into customers      
+- Improve customer experience with hyper-personalised communication   
+- Reduce manual data entry and overheads    
+
 
 
 <!--

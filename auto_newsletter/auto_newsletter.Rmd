@@ -1,6 +1,6 @@
 ---
 params:
-  title: "Auto newsletter generator"   
+  title: "Auto newsletter campaign"   
   subtitle: "Reddit, Apify, Google Drive, ChatGPT, Google Sheets, Mailchimp, Slack"    
   author: "99fold"
   email: "matt@99foldai.com"
@@ -15,7 +15,10 @@ params:
   here: "r"
   imgdir: "img"
   app1: "reddit.jpg"
-  app2: "slack.jpg"
+  app2: "gdrive.png"
+  app3: "gpt.png"
+  app4: "gsheet.png"
+  app5: "slack.jpg"
   img1: "apify.png"
   img2: "apify2.png"
   img3: "clickup.png"
@@ -180,13 +183,13 @@ Low-friction integration with your existing apps, workflow, and systems
 
 <!-- ##### Side by side image -->  
 
-```{r, echo = FALSE, out.width = "20%", fig.align = "center", out.extra = "style = 'display: inline;'", fig.show='hold', fig.align='center'}
+```{r, echo = FALSE, out.width = "15%", fig.align = "center", fig.show='hold', fig.align='center', out.extra = "style='display:inline-block; margin-right:5px;'"}
 knitr::include_graphics(c(
   paste(params$imgdir,params$app1,sep = "/")
   ,paste(params$imgdir,params$app2,sep = "/")
-  # ,paste(params$imgdir,params$app1,sep = "/")
-  # ,paste(params$imgdir,params$app1,sep = "/")
-  # ,paste(params$imgdir,params$app1,sep = "/")
+  ,paste(params$imgdir,params$app3,sep = "/")
+  ,paste(params$imgdir,params$app4,sep = "/")
+  ,paste(params$imgdir,params$app5,sep = "/")
   ))
 ```
 

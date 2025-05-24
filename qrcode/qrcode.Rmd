@@ -177,7 +177,7 @@ Low-friction integration with your existing apps, workflow, and systems
 
 <!-- ##### Side by side image -->
 
-```{r, echo = FALSE, out.width = "20%", fig.align = "center", out.extra = "style = 'display: inline;'", fig.show='hold', fig.align='center'}
+```{r, echo = FALSE, out.width = "15%", fig.align = "center", fig.show='hold', fig.align='center', out.extra = "style='display:inline-block; margin-right:5px;'"}
 knitr::include_graphics(c(
   paste(params$imgdir,params$app1,sep = "/")
   ,paste(params$imgdir,params$app2,sep = "/")
