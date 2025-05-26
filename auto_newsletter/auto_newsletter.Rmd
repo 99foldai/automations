@@ -33,7 +33,7 @@ output:
     css: css/style.css
     includes:
       # reactivate once header img sizing is fixed  
-      # before_body: html/header.html 
+      before_body: html/header.html
       after_body: html/footer.html
 ---
 
