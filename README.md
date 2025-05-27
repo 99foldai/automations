@@ -1,7 +1,7 @@
 # Automations  
 
 
-## [Automated invoicing system](https://99foldai.github.io/automations/invoice/invoice)              
+## [Automated invoicing system](https://99foldai.github.io/automations/invoice_system/invoice_system)              
 
 ### Tasks      
 - Auto invoice reminders to pending unpaid client invoices      
