@@ -147,7 +147,7 @@ feather.replace()
 
 # `r params$header1`
 
-Automated databse and email scheduling system for efficient invoicing and client management by managing vendor invoicing, client communication, and database updates.   
+Automated database and email scheduling system for efficient invoicing and client management by linking your vendor portal with your client database and communication channels.       
 
 1. Connect to Vendor (e.g., Stripe, PayPal)    
 Establish a connection with the payment vendor to facilitate transactions.  
