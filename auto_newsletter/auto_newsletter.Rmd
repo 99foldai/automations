@@ -11,7 +11,8 @@ params:
   header1: "Summary"
   header2: "Integrations"
   header3: "Workflow"
-  header4: "Example"
+  header4: "Outcomes"  
+  header5: "Example"
   here: "r"
   imgdir: "img"
   app1: "reddit.jpg"
@@ -261,9 +262,31 @@ knitr::include_graphics(c(
 
 # `r params$header4`
 
+### Tasks      
+- Auto invoice reminders to pending unpaid client invoices      
+- Linked to your own database/system    
+- Auto update invoices with status linked to payment account e.g. Stripe        
+
+### Benefits        
+- Save you $1000's per year in lost invoicing       
+- Eliminate manual checking and human error with invoice retrieval and collection     
+ 
+
+
+\  
+
+---
+
+\    
+
+
+# `r params$header5`
+
 Example of automated workflow (replace with your own tasks/apps)      
 
-![](img/flow.png)  
+<center>
+![](img/flow.png)    
+</center>
 
 
 

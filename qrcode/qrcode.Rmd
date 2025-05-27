@@ -11,7 +11,8 @@ params:
   header1: "Summary"
   header2: "Integrations"
   header3: "Workflow"
-  header4: "Example"
+  header4: "Outcomes"  
+  header5: "Example"
   here: "r"
   imgdir: "img"
   app1: "telegram.png"
@@ -36,6 +37,8 @@ output:
       before_body: html/header.html
       after_body: html/footer.html
 ---
+
+   
 
 <!-- quicksand font -->
 
@@ -252,6 +255,26 @@ knitr::include_graphics(c(
 \    
 
 # `r params$header4`
+
+### Tasks  
+- Auto collect LinkedIn profile data using QR codes      
+- Generate automated and personalised outreach emails and profiles     
+- Store, manage, and analyse contact information in a centralised cloud database     
+
+### Benefits  
+- Streamline outreach process to convert more leads into customers      
+- Improve customer experience with hyper-personalised communication   
+- Reduce manual data entry and overheads    
+
+
+\  
+
+---
+
+\    
+
+
+# `r params$header5`
 
 Example of automated workflow (replace with your own tasks/apps)      
 

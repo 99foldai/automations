@@ -1,27 +1,46 @@
 # Automations  
 
-## [Automated newsletter campaign](https://99foldai.github.io/automations/auto_newsletter/auto_newsletter)              
 
-#### Tasks      
+## [Automated invoicing system](https://99foldai.github.io/automations/invoice/invoice)              
+
+### Tasks      
 - Auto invoice reminders to pending unpaid client invoices      
 - Linked to your own database/system    
 - Auto update invoices with status linked to payment account e.g. Stripe        
 
-#### Benefits        
-- Save you $1000's per year in lost invoicing       
+### Benefits        
+- Save you $1000's per year in lost invoicing         
 - Eliminate manual checking and human error with invoice retrieval and collection     
+- Streamlined invoicing leads to faster payments and improved cash flow  
+- Keep clients informed, enhancing satisfaction and loyalty       
+- Reduce manual tasks allows teams to focus on strategic initiatives, driving business growth  
+
+
+******
+
+
+## [Automated newsletter campaign](https://99foldai.github.io/automations/auto_newsletter/auto_newsletter)              
+
+### Tasks      
+- Generate and schedule an automated newsletter         
+- Pull only latest and relevant from social sites     
+- Update mailing list database with content    
+
+### Benefits        
+- Automated and up to date content for an automated mailing list           
+- Save time and resources in sourcing content material    
 
 ******
 
 
 ## [LinkedIn profile scraper](https://99foldai.github.io/automations/qrcode/qrcode)                  
 
-#### Tasks  
+### Tasks  
 - Auto collect LinkedIn profile data using QR codes      
 - Generate automated and personalised outreach emails and profiles     
 - Store, manage, and analyse contact information in a centralised cloud database     
 
-#### Benefits  
+### Benefits  
 - Streamline outreach process to convert more leads into customers      
 - Improve customer experience with hyper-personalised communication   
 - Reduce manual data entry and overheads    
