@@ -1,14 +1,26 @@
 <style>
-.header-img{
+.header-img {
     background-image: url("img/header1.png");
-    height: 600px;  
+    height: 60vh; /* Fill half viewport height */
     background-attachment: fixed;
-    background-position: middle;
+    background-position: center;
     background-repeat: no-repeat;
-    background-size: 100%;
-  }
+    background-size: cover; /* Cover ensures full fill without distortion */
+    /*background-size: 70%; */
+    margin-top: 50px; /* Optional top buffer */
+}
 
+/* Optional mobile fix: disable parallax scrolling on smaller screens */
+@media (max-width: 768px) {
+    .header-img {
+        background-attachment: scroll;
+        background-size: contain; /* Zoomed out view */
+        background-position: top; /* Optional: adjust focus */
+    }
+}
 </style>
+
+
 <div class="header-img"></div>
 
 
