@@ -201,6 +201,7 @@ knitr::include_graphics(c(
 \  
 
 # `r params$header3`
+\  
 
 <!-- left justified image -->
 <div class = "row">
