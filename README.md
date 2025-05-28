@@ -1,5 +1,18 @@
 # Automations  
 
+## [SDR (client onboarding)](https://99foldai.github.io/automations/client_onboard/client_onboard)              
+
+### Tasks  
+Automate the process of client management and nurturing        
+Enhance team collaboration through shared databases      
+Streamline communication with clients and team members        
+
+### Benefits  
+Efficient data management leads to quicker client onboarding and project delivery, ultimately boosting sales  
+Timely updates and accurate data handling enhance client satisfaction and trust 
+Streamlined workflows reduce manual errors and save time, allowing teams to focus on strategic initiatives    
+
+******
 
 ## [Automated invoicing system](https://99foldai.github.io/automations/invoice_system/invoice_system)              
 
