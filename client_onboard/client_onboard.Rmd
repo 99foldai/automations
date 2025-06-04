@@ -172,16 +172,13 @@ Initialize a shared workspace and log a new entry with client data.
 7. Update team with parsed info  
 Notify internal team members with the extracted and organized client information.  
 
-8. Create shared database (Airtable)  
-Generate an Airtable workspace for collaborative client or project data.  
+8. Create shared database (Airtable, Clickup)  
+Generate an Airtable/Clickup workspace for collaborative client or project data.  
 
-9. Create shared database (ClickUp)    
-Set up a ClickUp space for shared task and project tracking.    
-
-10. Update team/client (Slack)  
+9. Update team/client (Slack)  
 Send automated status or data updates to team or client via Slack.  
 
-11. Send email to team/client  
+10. Send email to team/client  
 Email final results, updates, or next steps to relevant stakeholders.    
 
 
@@ -278,14 +275,14 @@ knitr::include_graphics(c(
 # `r params$header4`
 
 ### Tasks  
-Automate the process of client management and nurturing        
-Enhance team collaboration through shared databases      
-Streamline communication with clients and team members        
+- Automate the process of client management and nurturing        
+- Enhance team collaboration through shared databases      
+- Streamline communication with clients and team members        
 
 ### Benefits  
-Efficient data management leads to quicker client onboarding and project delivery, ultimately boosting sales  
-Timely updates and accurate data handling enhance client satisfaction and trust 
-Streamlined workflows reduce manual errors and save time, allowing teams to focus on strategic initiatives    
+- Efficient data management leads to quicker client onboarding and project delivery, ultimately boosting sales  
+- Timely updates and accurate data handling enhance client satisfaction and trust 
+- Streamlined workflows reduce manual errors and save time, allowing teams to focus on strategic initiatives    
 
 \  
 
