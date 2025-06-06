@@ -151,14 +151,19 @@ feather.replace()
 
 # `r params$header1`
 
+Stuck repeating the same onboarding tasks for new leads and clients? Manually entering data, sending emails, and managing leads status? This automation workflow handles new client onboarding from monitoring form entries to updating your database, to scheduling email and reminders to clients and you or your team members. 
+\ 
+
+Following new client entries, you can then add your own agency welcome packs to the workflow through email or your regular marketing channels. This handles the entire client pipeline with your own branding content and material and you have the option to add or extend your products and marketing material.    
+
 
 \  
 
-1. Watch for new form entry 
-Monitor form status for incoming responses  
+1. Watch for new form entry        
+Monitor form status for incoming responses    
 
-2. Download client data  
-Retrieve attached documents or files from the client's email.  
+2. Download client data    
+Retrieve attached documents or files from the client's email.    
 
 3. Filter relevant data  
 Apply conditions to isolate only the necessary or actionable data.  
@@ -174,7 +179,8 @@ Email final results, updates, or next steps to relevant team and welcome pack to
 
 \  
 
-# Welcome form example  
+# 1.  Welcome form (example)      
+Try out the live example form below by submitting your responses. Once the form is submitted, you can see the live updates on your database and the auto-scheduled sales funnel.  
 
 <!-- Airtable embed starts -->
 <iframe class="airtable-embed" 
@@ -189,8 +195,8 @@ Email final results, updates, or next steps to relevant team and welcome pack to
 
 \  
 
-# Welcome pack add-ons with your own agency branding      
-Your branded marketing or outreach content and material added to the end of the automation channel, complete with your agency design, palette, logos, and design scope  
+# 2. Welcome pack add-ons with your own agency branding      
+Following onboarding, your own branded agency marketing campaign and/or welcome material can be added to the workflow to customise the onboarding experience, complete with agency design, palette, logos, and design scope. Check out the below examples for inspiration.      
 \  
 
 <!-- ------------------------------------------------------------------------ -->
