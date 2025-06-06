@@ -14,12 +14,8 @@ params:
   header4: ""
   here: "r"
   imgdir: "img"
-  img1: "reddit.jpg"
-  img2: "linkedin.png"
-  img3: "slack.png"
-  img4: "apify.png"
-  img5: "apify2.png"
-  img6: "clickup.png"
+  app1: "app1.png"
+  img1: "img1.png"
   github: ""      
 output: 
   # pdf_document:
@@ -81,16 +77,7 @@ knitr::opts_chunk$set(
 # source(here::here("r","make_gitignore.R"))
 # source(here::here("r","make_plot_stacked.R"))
 ```
-
-\  
-\  
-
-# [`r params$title`]{style="font-size: 200%;"}
-# [`r params$subtitle`]{style="font-size: 150%;"}
-
-\  
-\      
-
+      
 <center> 
 [`r params$author` | `r params$email` | `r params$social`]{style="font-size: 120%; color:`r params$secondary`;"} 
 
@@ -178,17 +165,6 @@ Apify: https://console.apify.com/actors/oAuCIx3ItNrs2okjQ/runs/5I1jMq1JPXb79H4AU
 
 <!-- ##### Side by side image -->
 
-```{r, echo = FALSE, out.width = "20%", fig.align = "center", out.extra = "style = 'display: inline;'", fig.show='hold', fig.align='center'}
-knitr::include_graphics(c(
-  paste(params$imgdir,params$img1,sep = "/"),
-  paste(params$imgdir,params$img1,sep = "/"),
-  paste(params$imgdir,params$img1,sep = "/"),
-  paste(params$imgdir,params$img1,sep = "/"),
-  paste(params$imgdir,params$img1,sep = "/"),
-  paste(params$imgdir,params$img1,sep = "/"),
-  paste(params$imgdir,params$img1,sep = "/")
-  ))
-```
 
 
 

@@ -1,0 +1,358 @@
+---
+params:
+  title: "Agency welcome pack"     
+  subtitle: "Gmail, Google Drive, Airtable"      
+  author: "99fold"
+  email: "matt@99foldai.com"
+  social: "@99foldai"
+  date: "April 2025"    
+  primary: "#284e36"
+  secondary: "#c3c3c3"
+  header1: "Summary"
+  header2: "Integrations"
+  header3: "Workflow"
+  header4: "Outcomes"
+  header5: "Example"
+  here: "r"
+  imgdir: "img"
+  app1: "app1.png"
+  app2: "app2.png"
+  app3: "app3.png"
+  img1: "img1.png"
+  img2: "img2.png"
+  img3: "img3.png"
+  img4: ""
+  img5: ""
+  img6: ""
+  github: ""      
+output: 
+  # pdf_document:
+  html_document:
+    self_contained: false
+    theme: "cosmo"
+    css: css/style.css
+    includes:
+      # reactivate once header img sizing is fixed  
+      before_body: html/header.html
+      after_body: html/footer.html
+---
+
+<!-- quicksand font -->
+
+<!-- <link rel="stylesheet"href="//fonts.googleapis.com/css?family=Quicksand:300,400,600,700&amp;lang=en"/> -->
+
+<!-- css for tabs -->
+
+```{=html}
+<style type="text/css">
+
+.nav>li>a{
+    position: relative;
+    display: block;
+    padding: 10px 15px;
+}
+
+.nav-pills>li>a:hover{
+  border-radius: 15px;
+  background: `r params$primary`;
+  color: `r params$secondary`;
+  opacity:0.7;
+}
+
+.nav-pills>li>a:focus, .nav-pills>li.active>a, .nav-pills>li.active>a:hover, .nav-pills>li.active>a:focus {
+  border-radius: 15px;
+  background: `r params$primary`;
+  background-color: `r params$primary`;
+}
+
+</style>
+```
+
+
+```{r, set-options, echo = F, cache = T, message=F}
+options(width=25,tinytex.verbose = TRUE, width.cutoff=25)
+knitr::opts_chunk$set(
+ eval = F, # run all code
+ echo = F, # show code chunks in output 
+ tidy = T, # make output as tidy
+ message = F,  # mask all messages
+ warning = F, # mask all warnings 
+ size="small", # set code chunk size,
+ tidy.opts=list(width.cutoff=25) # set width of code chunks in output
+)
+# tinytex::install_tinytex()
+# require(tinytex)
+# install.packages("pacman")
+# require(pacman)
+
+# knitr::read_chunk(here::here("r","make_map.R"))
+# source(here::here("r","make_gitignore.R"))
+# source(here::here("r","make_plot_stacked.R"))
+```
+
+\  
+\  
+
+# [`r params$title`]{style="font-size: 200%;"}
+# [`r params$subtitle`]{style="font-size: 150%;"}
+
+\  
+\      
+
+
+
+<center> 
+[`r params$author` | `r params$email` | `r params$social`]{style="font-size: 120%; color:`r params$secondary`;"} 
+
+<!-- feather icons -->
+<script src="https://unpkg.com/feather-icons"></script>
+
+<p>
+    
+    <!-- calendly -->
+    <a href="https://urldefense.com/v3/__https://www.linkedin.com/in/mmalishev/__;!!LBk0ZmAmG_H4m2o!oVrnGVTq4VaGa7cN1gDQyR-O-uL_Yd8JSrkae11vsa2I21g1vV9KxKx0txpwzaf2r62aEVKCC1cHORxRiSg$"> <!-- calendly -->
+        <i data-feather="mail"></i> 
+    </a>
+    <!-- linkedin -->
+    <a href="https://urldefense.com/v3/__https://www.linkedin.com/in/mmalishev/__;!!LBk0ZmAmG_H4m2o!oVrnGVTq4VaGa7cN1gDQyR-O-uL_Yd8JSrkae11vsa2I21g1vV9KxKx0txpwzaf2r62aEVKCC1cHORxRiSg$"> <!-- linkedin -->
+        <i data-feather="linkedin"></i> 
+    </a>
+    <a href="">  <!-- instagram -->
+        <i data-feather="instagram"></i> 
+    </a>
+</p>
+
+<!-- feather icons -->
+<script>
+feather.replace()
+</script>
+
+&nbsp;
+
+
+</center>
+
+\  
+
+---
+
+\  
+
+<!-- #### Refs   -->
+<!-- Apify: https://console.apify.com/actors/oAuCIx3ItNrs2okjQ/runs/5I1jMq1JPXb79H4AU#output           -->
+<!-- Napkin url: https://app.napkin.ai/page/CgoiCHByb2Qtb25lEiwKBFBhZ2UaJDRlMWI1MGIyLTk0MzAtNDVlMS1iYzMyLTFkYTY5ZGRhZDM5Mg?s=1   -->
+
+
+<!-- ------------------------------------------------------------------------ -->
+
+<!-- # `r params$header1` {.tabset .tabset-fade .tabset-pills} -->
+<!-- tab1 -->
+<!-- ## [Plots]{style="color:`r params$secondary`;"} # add custom css styling to tabs-->
+
+# `r params$header1`
+
+
+\  
+
+1. Watch for new form entry 
+Monitor form status for incoming responses  
+
+2. Download client data  
+Retrieve attached documents or files from the client's email.  
+
+3. Filter relevant data  
+Apply conditions to isolate only the necessary or actionable data.  
+
+4. Upload filtered data to database (Airtable)   
+Send cleaned and structured data to the appropriate database.  
+
+5. Create shared database and new record  
+Initialize a shared workspace and log a new entry with client data.  
+
+6. Send email to team/client  
+Email final results, updates, or next steps to relevant team and welcome pack to client.
+
+\  
+
+# Welcome form example  
+
+<!-- Airtable embed starts -->
+<iframe class="airtable-embed" 
+        src="https://airtable.com/embed/appVzBxhWOi2O4EiL/pagrqEIWjaSuLHk9n/form" 
+        frameborder="0" 
+        onmousewheel="" 
+        width="100%" 
+        height="533" 
+        style="background: transparent; border: 1px solid #ccc;">
+</iframe>
+<!-- Airtable embed ends -->
+
+\  
+
+# Welcome pack add-ons with your own agency branding      
+Your branded marketing or outreach content and material added to the end of the automation channel, complete with your agency design, palette, logos, and design scope  
+\  
+
+<!-- ------------------------------------------------------------------------ -->
+
+#  {.tabset .tabset-fade .tabset-pills}
+
+<!-- tab1 -->
+
+<!-- ## [Plots]{style="color:`r params$secondary`;"} # add custom css styling to tabs-->
+
+
+
+## Discovery call  \
+## Brand audit  \
+## Style guide  \
+## Logo design  \
+## Website mockup  \
+## Pitch deck  \
+## Landing page  \
+## Ad creative  \
+## Content calendar  \
+## Social templates  \
+## Email sequence  \
+## SEO checklist  \
+## Sales funnel  \
+## Lead magnet  \
+## Media kit  \
+## Brand strategy  \
+## Customer persona  \
+## Copywriting guide  \
+## Analytics report  \
+## Mailing list \  
+## Project proposal \  
+
+# 
+
+
+---
+
+\  
+
+# `r params$header2`  
+
+\  
+Low-friction integration with your existing apps, workflow, and systems      
+
+<!-- ##### Side by side image -->  
+
+```{r, echo = FALSE, out.width = "15%", fig.align = "center", fig.show='hold', fig.align='center', out.extra = "style='display:inline-block; margin-right:5px;'"}
+knitr::include_graphics(c(
+  paste(params$imgdir,params$app1,sep = "/")
+  ,paste(params$imgdir,params$app2,sep = "/")
+  ,paste(params$imgdir,params$app3,sep = "/")
+  ))
+```
+
+\    
+
+---
+
+\  
+
+# `r params$header3`
+\  
+
+<!-- left justified image -->
+<div class = "row">
+  <div class = "col-md-8"> <!-- img  -->
+  <center><img class = "remove-border" 
+  src=`r stringr::str_subset(list.files(params$imgdir, full.names = T), params$img1)`> 
+  </center>
+</div>
+  <div class = "col-md-4"> 
+  <br>
+
+> Wait for incoming form responses from new clients   
+
+  </div>
+</div>
+
+\    
+
+<!-- right justified image -->
+<div class = "row">
+  <div class = "col-md-4 right-just"> <!-- img  -->
+  <br><br>     
+
+> Trigger automated data entry to database (Airtable, Google Drive, Clickup)  
+
+<br>     
+</div>
+  <div class = "col-md-8"> 
+  <center><img class = "remove-border" 
+  src=`r stringr::str_subset(list.files(params$imgdir, full.names = T), params$img2)`> 
+  </center>
+  </div>
+</div>
+
+\  
+
+<!-- left justified image -->
+<div class = "row">
+  <div class = "col-md-8"> <!-- img  -->
+  <center><img class = "remove-border" 
+  src=`r stringr::str_subset(list.files(params$imgdir, full.names = T), params$img3)`> 
+  </center>
+</div>
+  <div class = "col-md-4"> 
+  <br>  
+
+> Shoot off welcome email to new client with personalised message and branded content from your agency      
+
+  </div>
+</div>
+
+\  
+
+---
+
+\    
+
+# `r params$header4`
+
+### Tasks
+- Monitor and capture incoming client form submissions.  
+- Filter and organize client data for easy access and analysis.  
+- Communicate updates and necessary information to team members and clients.  
+
+### Benefits
+- Streamlined data management allows for quicker response times, leading to more sales opportunities.  
+- Efficient communication and organized data ensure clients receive timely updates and support.
+- Automated data handling reduces manual errors and saves time  
+
+\  
+
+---
+
+\    
+
+
+# `r params$header5`
+
+Example of automated workflow (replace with your own tasks/apps)        
+
+
+<center>
+![](img/flow.png)    
+</center>
+
+\  
+
+#### Welcome pack add-ons with your own agency branding  
+
+<center>
+![](img/flow2.png)    
+</center>
+
+
+#
+
+
+
+
+
+

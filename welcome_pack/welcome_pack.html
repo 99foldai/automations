@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta charset="utf-8" />
+<meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+
+
+
+
+<title>welcome_pack.knit</title>
+
+<script src="welcome_pack_files/header-attrs-2.29/header-attrs.js"></script>
+<script src="welcome_pack_files/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="welcome_pack_files/bootstrap-3.3.5/css/cosmo.min.css" rel="stylesheet" />
+<script src="welcome_pack_files/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="welcome_pack_files/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="welcome_pack_files/bootstrap-3.3.5/shim/respond.min.js"></script>
+<style>h1 {font-size: 34px;}
+       h1.title {font-size: 38px;}
+       h2 {font-size: 30px;}
+       h3 {font-size: 24px;}
+       h4 {font-size: 18px;}
+       h5 {font-size: 16px;}
+       h6 {font-size: 12px;}
+       code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
+       pre:not([class]) { background-color: white }</style>
+<script src="welcome_pack_files/navigation-1.1/tabsets.js"></script>
+<link href="welcome_pack_files/highlightjs-9.12.0/default.css" rel="stylesheet" />
+<script src="welcome_pack_files/highlightjs-9.12.0/highlight.js"></script>
+
+<style type="text/css">
+  code{white-space: pre-wrap;}
+  span.smallcaps{font-variant: small-caps;}
+  span.underline{text-decoration: underline;}
+  div.column{display: inline-block; vertical-align: top; width: 50%;}
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  ul.task-list{list-style: none;}
+    </style>
+
+<style type="text/css">code{white-space: pre;}</style>
+<script type="text/javascript">
+if (window.hljs) {
+  hljs.configure({languages: []});
+  hljs.initHighlightingOnLoad();
+  if (document.readyState && document.readyState === "complete") {
+    window.setTimeout(function() { hljs.initHighlighting(); }, 0);
+  }
+}
+</script>
+
+
+
+
+
+
+<link rel="stylesheet" href="css/style.css" type="text/css" />
+
+
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+img {
+  max-width:100%;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+.html-widget {
+  margin-bottom: 20px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+summary {
+  display: list-item;
+}
+details > summary > p:only-child {
+  display: inline;
+}
+pre code {
+  padding: 0;
+}
+</style>
+
+
+
+<!-- tabsets -->
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before, .tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "\e259";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "\e258";
+  font-family: 'Glyphicons Halflings';
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+  background-color: transparent;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
+
+<!-- code folding -->
+
+
+
+
+</head>
+
+<body>
+
+
+<div class="container-fluid main-container">
+
+
+
+<style>
+.header-img {
+    background-image: url("img/header1.png");
+    height: 60vh; /* Fill half viewport height */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; /* Cover ensures full fill without distortion */
+    /*background-size: 70%; */
+    margin-top: 50px; /* Optional top buffer */
+}
+
+/* Optional mobile fix: disable parallax scrolling on smaller screens */
+@media (max-width: 768px) {
+    .header-img {
+        background-attachment: scroll;
+        background-size: contain; /* Zoomed out view */
+        background-position: top; /* Optional: adjust focus */
+    }
+}
+</style>
+
+
+<div class="header-img"></div>
+
+
+
+
+
+<div id="header">
+
+
+
+
+</div>
+
+
+<!-- quicksand font -->
+<!-- <link rel="stylesheet"href="//fonts.googleapis.com/css?family=Quicksand:300,400,600,700&amp;lang=en"/> -->
+<!-- css for tabs -->
+<style type="text/css">
+
+.nav>li>a{
+    position: relative;
+    display: block;
+    padding: 10px 15px;
+}
+
+.nav-pills>li>a:hover{
+  border-radius: 15px;
+  background: #284e36;
+  color: #c3c3c3;
+  opacity:0.7;
+}
+
+.nav-pills>li>a:focus, .nav-pills>li.active>a, .nav-pills>li.active>a:hover, .nav-pills>li.active>a:focus {
+  border-radius: 15px;
+  background: #284e36;
+  background-color: #284e36;
+}
+
+</style>
+<p>   </p>
+<div id="agency-welcome-pack" class="section level1">
+<h1><span style="font-size: 200%;">Agency welcome pack</span></h1>
+</div>
+<div id="gmail-google-drive-airtable" class="section level1">
+<h1><span style="font-size: 150%;">Gmail, Google Drive,
+Airtable</span></h1>
+<p>   </p>
+<center>
+<p><span style="font-size: 120%; color:#c3c3c3;">99fold | <a
+href="mailto:matt@99foldai.com" class="email">matt@99foldai.com</a> |
+<span class="citation">@99foldai</span></span></p>
+<!-- feather icons -->
+<script src="https://unpkg.com/feather-icons"></script>
+<p>
+<!-- calendly -->
+<a href="https://urldefense.com/v3/__https://www.linkedin.com/in/mmalishev/__;!!LBk0ZmAmG_H4m2o!oVrnGVTq4VaGa7cN1gDQyR-O-uL_Yd8JSrkae11vsa2I21g1vV9KxKx0txpwzaf2r62aEVKCC1cHORxRiSg$">
+<!-- calendly --> <i data-feather="mail"></i> </a> <!-- linkedin -->
+<a href="https://urldefense.com/v3/__https://www.linkedin.com/in/mmalishev/__;!!LBk0ZmAmG_H4m2o!oVrnGVTq4VaGa7cN1gDQyR-O-uL_Yd8JSrkae11vsa2I21g1vV9KxKx0txpwzaf2r62aEVKCC1cHORxRiSg$">
+<!-- linkedin --> <i data-feather="linkedin"></i> </a> <a href="">
+<!-- instagram --> <i data-feather="instagram"></i> </a>
+</p>
+<!-- feather icons -->
+<script>
+feather.replace()
+</script>
+<p> </p>
+</center>
+<p> </p>
+<hr />
+<p> </p>
+<!-- #### Refs   -->
+<!-- Apify: https://console.apify.com/actors/oAuCIx3ItNrs2okjQ/runs/5I1jMq1JPXb79H4AU#output           -->
+<!-- Napkin url: https://app.napkin.ai/page/CgoiCHByb2Qtb25lEiwKBFBhZ2UaJDRlMWI1MGIyLTk0MzAtNDVlMS1iYzMyLTFkYTY5ZGRhZDM5Mg?s=1   -->
+<!-- ------------------------------------------------------------------------ -->
+<!-- # Summary {.tabset .tabset-fade .tabset-pills} -->
+<!-- tab1 -->
+<!-- ## [Plots]{style="color:#c3c3c3;"} # add custom css styling to tabs-->
+</div>
+<div id="summary" class="section level1">
+<h1>Summary</h1>
+<p> </p>
+<ol style="list-style-type: decimal">
+<li><p>Watch for new form entry Monitor form status for incoming
+responses</p></li>
+<li><p>Download client data<br />
+Retrieve attached documents or files from the client’s email.</p></li>
+<li><p>Filter relevant data<br />
+Apply conditions to isolate only the necessary or actionable
+data.</p></li>
+<li><p>Upload filtered data to database (Airtable)<br />
+Send cleaned and structured data to the appropriate database.</p></li>
+<li><p>Create shared database and new record<br />
+Initialize a shared workspace and log a new entry with client
+data.</p></li>
+<li><p>Send email to team/client<br />
+Email final results, updates, or next steps to relevant team and welcome
+pack to client.</p></li>
+</ol>
+<p> </p>
+</div>
+<div id="welcome-form-example" class="section level1">
+<h1>Welcome form example</h1>
+<!-- Airtable embed starts -->
+<iframe class="airtable-embed" src="https://airtable.com/embed/appVzBxhWOi2O4EiL/pagrqEIWjaSuLHk9n/form" frameborder="0" onmousewheel width="100%" height="533" style="background: transparent; border: 1px solid #ccc;">
+</iframe>
+<!-- Airtable embed ends -->
+<p> </p>
+</div>
+<div id="welcome-pack-add-ons-with-your-own-agency-branding"
+class="section level1">
+<h1>Welcome pack add-ons with your own agency branding</h1>
+<p>Your branded marketing or outreach content and material added to the
+end of the automation channel, complete with your agency design,
+palette, logos, and design scope<br />
+ </p>
+<!-- ------------------------------------------------------------------------ -->
+</div>
+<div id="section"
+class="section level1 tabset tabset-fade tabset-pills">
+<h1 class="tabset tabset-fade tabset-pills"></h1>
+<!-- tab1 -->
+<!-- ## [Plots]{style="color:#c3c3c3;"} # add custom css styling to tabs-->
+<div id="discovery-call" class="section level2">
+<h2>Discovery call<br />
+</h2>
+</div>
+<div id="brand-audit" class="section level2">
+<h2>Brand audit<br />
+</h2>
+</div>
+<div id="style-guide" class="section level2">
+<h2>Style guide<br />
+</h2>
+</div>
+<div id="logo-design" class="section level2">
+<h2>Logo design<br />
+</h2>
+</div>
+<div id="website-mockup" class="section level2">
+<h2>Website mockup<br />
+</h2>
+</div>
+<div id="pitch-deck" class="section level2">
+<h2>Pitch deck<br />
+</h2>
+</div>
+<div id="landing-page" class="section level2">
+<h2>Landing page<br />
+</h2>
+</div>
+<div id="ad-creative" class="section level2">
+<h2>Ad creative<br />
+</h2>
+</div>
+<div id="content-calendar" class="section level2">
+<h2>Content calendar<br />
+</h2>
+</div>
+<div id="social-templates" class="section level2">
+<h2>Social templates<br />
+</h2>
+</div>
+<div id="email-sequence" class="section level2">
+<h2>Email sequence<br />
+</h2>
+</div>
+<div id="seo-checklist" class="section level2">
+<h2>SEO checklist<br />
+</h2>
+</div>
+<div id="sales-funnel" class="section level2">
+<h2>Sales funnel<br />
+</h2>
+</div>
+<div id="lead-magnet" class="section level2">
+<h2>Lead magnet<br />
+</h2>
+</div>
+<div id="media-kit" class="section level2">
+<h2>Media kit<br />
+</h2>
+</div>
+<div id="brand-strategy" class="section level2">
+<h2>Brand strategy<br />
+</h2>
+</div>
+<div id="customer-persona" class="section level2">
+<h2>Customer persona<br />
+</h2>
+</div>
+<div id="copywriting-guide" class="section level2">
+<h2>Copywriting guide<br />
+</h2>
+</div>
+<div id="analytics-report" class="section level2">
+<h2>Analytics report<br />
+</h2>
+</div>
+<div id="mailing-list" class="section level2">
+<h2>Mailing list  </h2>
+</div>
+<div id="project-proposal" class="section level2">
+<h2>Project proposal  </h2>
+</div>
+</div>
+<div id="section-1" class="section level1">
+<h1></h1>
+<hr />
+<p> </p>
+</div>
+<div id="integrations" class="section level1">
+<h1>Integrations</h1>
+<p>  Low-friction integration with your existing apps, workflow, and
+systems</p>
+<!-- ##### Side by side image -->
+<p><img src="img/app1.png" width="15%" style='display:inline-block; margin-right:5px;' style="display: block; margin: auto;" /><img src="img/app2.png" width="15%" style='display:inline-block; margin-right:5px;' style="display: block; margin: auto;" /><img src="img/app3.png" width="15%" style='display:inline-block; margin-right:5px;' style="display: block; margin: auto;" /></p>
+<p> </p>
+<hr />
+<p> </p>
+</div>
+<div id="workflow" class="section level1">
+<h1>Workflow</h1>
+<p> </p>
+<!-- left justified image -->
+<div class="row">
+<div class="col-md-8">
+<!-- img  -->
+<center>
+<img class = "remove-border" 
+  src=img/img1.png>
+</center>
+</div>
+<div class="col-md-4">
+<p><br></p>
+<blockquote>
+<p>Wait for incoming form responses from new clients</p>
+</blockquote>
+</div>
+</div>
+<p> </p>
+<!-- right justified image -->
+<div class="row">
+<div class="col-md-4 right-just">
+<p><!-- img  --> <br><br></p>
+<blockquote>
+<p>Trigger automated data entry to database (Airtable, Google Drive,
+Clickup)</p>
+</blockquote>
+<p><br></p>
+</div>
+<div class="col-md-8">
+<center>
+<img class = "remove-border" 
+  src=img/img2.png>
+</center>
+</div>
+</div>
+<p> </p>
+<!-- left justified image -->
+<div class="row">
+<div class="col-md-8">
+<!-- img  -->
+<center>
+<img class = "remove-border" 
+  src=img/img3.png>
+</center>
+</div>
+<div class="col-md-4">
+<p><br></p>
+<blockquote>
+<p>Shoot off welcome email to new client with personalised message and
+branded content from your agency</p>
+</blockquote>
+</div>
+</div>
+<p> </p>
+<hr />
+<p> </p>
+</div>
+<div id="outcomes" class="section level1">
+<h1>Outcomes</h1>
+<div id="tasks" class="section level3">
+<h3>Tasks</h3>
+<ul>
+<li>Monitor and capture incoming client form submissions.<br />
+</li>
+<li>Filter and organize client data for easy access and analysis.<br />
+</li>
+<li>Communicate updates and necessary information to team members and
+clients.</li>
+</ul>
+</div>
+<div id="benefits" class="section level3">
+<h3>Benefits</h3>
+<ul>
+<li>Streamlined data management allows for quicker response times,
+leading to more sales opportunities.<br />
+</li>
+<li>Efficient communication and organized data ensure clients receive
+timely updates and support.</li>
+<li>Automated data handling reduces manual errors and saves time</li>
+</ul>
+<p> </p>
+<hr />
+<p> </p>
+</div>
+</div>
+<div id="example" class="section level1">
+<h1>Example</h1>
+<p>Example of automated workflow (replace with your own tasks/apps)</p>
+<center>
+<img src="img/flow.png" />
+</center>
+<p> </p>
+<div id="welcome-pack-add-ons-with-your-own-agency-branding-1"
+class="section level4">
+<h4>Welcome pack add-ons with your own agency branding</h4>
+<center>
+<img src="img/flow2.png" />
+</center>
+</div>
+</div>
+<div id="section-2" class="section level1">
+<h1></h1>
+</div>
+
+&nbsp;
+<hr />
+<p style="text-align: center;">Another automation by <a style="color: #284e36;" href="https://www.solo.to/99fold">99fold</a></p>
+
+<!-- feather icons -->
+<script src="https://unpkg.com/feather-icons"></script>
+
+<p style="text-align: center;">
+    
+    <!-- calendly -->
+    <a href="https://urldefense.com/v3/__https://www.linkedin.com/in/mmalishev/__;!!LBk0ZmAmG_H4m2o!oVrnGVTq4VaGa7cN1gDQyR-O-uL_Yd8JSrkae11vsa2I21g1vV9KxKx0txpwzaf2r62aEVKCC1cHORxRiSg$"> <!-- calendly -->
+        <i data-feather="mail"></i> 
+    </a>
+    
+    <!-- linkedin -->
+    <a href="https://urldefense.com/v3/__https://www.linkedin.com/in/mmalishev/__;!!LBk0ZmAmG_H4m2o!oVrnGVTq4VaGa7cN1gDQyR-O-uL_Yd8JSrkae11vsa2I21g1vV9KxKx0txpwzaf2r62aEVKCC1cHORxRiSg$"> <!-- linkedin -->
+        <i data-feather="linkedin"></i> 
+    </a>
+    <a href="">  <!-- instagram -->
+        <i data-feather="instagram"></i> 
+    </a>
+</p>
+
+<!-- feather icons -->
+<script>
+feather.replace()
+</script>
+
+&nbsp;
+
+    
+
+
+
+
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.odd').parent('tbody').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open');
+  });
+});
+</script>
+
+<!-- code folding -->
+
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>

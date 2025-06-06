@@ -75,6 +75,23 @@
 - Reduce manual data entry and overheads    
 
 
+******
+
+## [Agency welcome pack](https://99foldai.github.io/automations/welcome_pack/welcome_pack)                  
+
+### Tasks      
+
+- Automatically connect to your current client database with no need for separate apps    
+- Trigger outbound calls via a trained voice AI agent using personalized, objection-handling scripts    
+- Log call outcomes directly into your system for real-time tracking and follow-up actions  
+
+### Benefits          
+
+- Boost lead engagement and conversions by reaching more prospects with no added team bandwidth  
+- Streamline outbound processes with consistent, human-like AI calls 
+- Gain data-driven insights to refine messaging, improve targeting, and optimize outreach strategies      
+
+******
 
 <!--
 <div align="center">

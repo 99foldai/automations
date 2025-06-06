@@ -179,7 +179,7 @@ Generate an Airtable/Clickup workspace for collaborative client or project data.
 Send automated status or data updates to team or client via Slack.  
 
 10. Send email to team/client  
-Email final results, updates, or next steps to relevant stakeholders.    
+Email final results, updates, or next steps to team and client email channels      
 
 
 
