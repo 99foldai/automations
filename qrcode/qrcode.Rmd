@@ -9,9 +9,12 @@ params:
   primary: "#284e36"
   secondary: "#c3c3c3"
   header1: "Summary"
-  header2: "Integrations"
-  header3: "Workflow"
-  header4: "Outcomes"  
+  header1b: "Who is this perfect for?"
+  header1c: "What does it do for you?"  
+  header1d: "How does it work?"  
+  header2: "Pathway"
+  header3: "Process"
+  header4: "More benefits"
   header5: "Example"
   here: "r"
   imgdir: "img"
@@ -47,11 +50,11 @@ output:
 <!-- css for tabs -->
 
 
-<!-- Calendly badge widget begin -->
-<link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
-<script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
-<script type="text/javascript">window.onload = function() { Calendly.initBadgeWidget({ url: 'https://calendly.com/99foldai/intro-chat?primary_color=284e36', text: 'Like this automation? Jump on a call to see more.', color: '#284e36', textColor: '#ffffff' }); }</script>
-<!-- Calendly badge widget end -->
+
+```{r, echo=F, eval=T, error=F, warning=F, results='asis'}
+
+htmltools::HTML(readr::read_file(here::here("html", "calendly.html")))
+```
 
 
 ```{=html}
@@ -162,6 +165,30 @@ Extracting LinkedIn profile data using a QR code scanner (Telegram, Whatsapp), u
 The workflow is designed to streamline the process of collecting and managing client data by enhancing efficiency in outreach efforts using automated app integrations and auto scheduling.  
 
 
+\  
+
+---
+
+\  
+
+
+
+# `r params$header1b`  
+
+#  {.tabset .tabset-fade }
+
+## Service provider  \
+## Sales teams \ 
+## Recruitment agency \  
+## Brick and mortar business \  
+## Sport clubs \  
+## Tourism agency \  
+## Digital design business \  
+## Service provider  \
+## Brand strategist \ 
+
+
+# `r params$header1d` 
 
 1. Wait for QR code scan from mobile (Telegram, Whatsapp)  
 2. Scan QR Code: Use your phone to scan the QR code from a person’s LinkedIn profile.   

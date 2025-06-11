@@ -10,10 +10,11 @@ params:
   secondary: "#c3c3c3"
   header1: "Summary"
   header1b: "Who is this perfect for?"
-  header1c: "Steps and actions"  
-  header2: "Integrations"
-  header3: "Workflow"
-  header4: "Outcomes"
+  header1c: "What does it do for you?"  
+  header1d: "How does it work?"  
+  header2: "Pathway"
+  header3: "Process"
+  header4: "More benefits"
   header5: "Example"
   here: "r"
   imgdir: "img"
@@ -26,6 +27,9 @@ params:
   img4: ""
   img5: ""
   img6: ""
+  roihours: 12
+  roivalue: 1500
+  roirate: 10
   github: ""      
 output: 
   # pdf_document:
@@ -45,11 +49,12 @@ output:
 
 <!-- css for tabs -->
 
-<!-- Calendly badge widget begin -->
-<link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
-<script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
-<script type="text/javascript">window.onload = function() { Calendly.initBadgeWidget({ url: 'https://calendly.com/99foldai/intro-chat?primary_color=284e36', text: 'Like this automation? Jump on a call to see more.', color: '#284e36', textColor: '#ffffff' }); }</script>
-<!-- Calendly badge widget end -->
+
+
+```{r, echo=F, eval=T, error=F, warning=F, results='asis'}
+
+htmltools::HTML(readr::read_file(here::here("html", "calendly.html")))
+```
 
 
 
@@ -121,7 +126,7 @@ knitr::opts_chunk$set(
 
 <p>
     
-    <!-- calendly -->
+    <!-- email -->
     <a href="https://urldefense.com/v3/__https://www.linkedin.com/in/mmalishev/__;!!LBk0ZmAmG_H4m2o!oVrnGVTq4VaGa7cN1gDQyR-O-uL_Yd8JSrkae11vsa2I21g1vV9KxKx0txpwzaf2r62aEVKCC1cHORxRiSg$"> <!-- calendly -->
         <i data-feather="mail"></i> 
     </a>
@@ -173,16 +178,33 @@ Following the client onboarding, you can then add your own agency sales, promo, 
 
 #  {.tabset .tabset-fade }
 
-## Marketing agencies \ 
-## Creative agencies \ 
-## Digital design businesses \  
-## Service providers  \
+## Marketing agency \ 
+## Creative agency \ 
+## Digital design business \  
+## Service provider  \
+## Brand strategist \ 
+## Logo designer \  
+## Web designer \  
+## UI/UX designer \  
+## Creative/art director \  
+## Design studio \  
 
-\  
+# `r params$header1c`
 
 
-# `r params$header1c`  
+```{r, echo=F, eval=T, error=F, warning=F,results=F}
+source(here::here("r","roi.R"))
+```
 
+```{=html}
+<div class="widget-container"><div class="section-heading">Time and tasks</div><div class="flex-row"><div class="data-box"><div class="data-label">Task hours (p/w)</div><div class="data-value"> `r task_hours_pw` </div></div><div class="data-box"><div class="data-label">Average client value ($)</div><div class="data-value">`r paste0("$",client_value)`</div></div><div class="data-box"><div class="data-label">Average close rate (%)</div><div class="data-value">`r params$roirate`</div></div></div><div class="section-heading">Outcomes</div><div class="flex-row"><div class="data-box"><div class="data-label">Hours saved (p/m)</div><div class="data-value">`r hours_saved_pm `</div></div><div class="data-box"><div class="data-label">Annual topline ROI ($)</div><div class="data-value">`r annual_roi`</div></div></div></div>
+```
+
+
+# `r params$header1d`  
+
+  
+  
 1. Watch for new form entry        
 Monitor form status for incoming responses    
 
@@ -204,7 +226,7 @@ Email final results, updates, or next steps to relevant team and welcome pack to
 \  
 
 
-# 1.  Welcome form (example)      
+## 1.  Welcome form (example)      
 Try out the live example form below by submitting your responses. Once the form is submitted, you can see the live updates on your database and the auto-scheduled sales funnel. If the below form doesn't display, find the form **[here](https://airtable.com/appVzBxhWOi2O4EiL/pagrqEIWjaSuLHk9n/form)**.    
 
 <!-- Airtable embed starts -->
@@ -213,7 +235,7 @@ Try out the live example form below by submitting your responses. Once the form 
 
 \  
 
-# 2. Welcome pack add-ons with your own agency branding      
+## 2. Welcome pack add-ons with your own agency branding      
 Following onboarding, your own branded agency marketing campaign and/or welcome material can be added to the workflow to customise the onboarding experience, complete with agency design, palette, logos, and design scope. Check out the below examples for inspiration.      
 \  
 

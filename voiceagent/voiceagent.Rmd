@@ -9,9 +9,12 @@ params:
   primary: "#284e36"
   secondary: "#c3c3c3"
   header1: "Summary"
-  header2: "Integrations"
-  header3: "Workflow"
-  header4: "Outcomes"
+  header1b: "Who is this perfect for?"
+  header1c: "What does it do for you?"  
+  header1d: "How does it work?"  
+  header2: "Pathway"
+  header3: "Process"
+  header4: "More benefits"
   header5: "Example"
   here: "r"
   imgdir: "img"
@@ -46,11 +49,10 @@ output:
 
 
 
-<!-- Calendly badge widget begin -->
-<link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
-<script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
-<script type="text/javascript">window.onload = function() { Calendly.initBadgeWidget({ url: 'https://calendly.com/99foldai/intro-chat?primary_color=284e36', text: 'Like this automation? Jump on a call to see more.', color: '#284e36', textColor: '#ffffff' }); }</script>
-<!-- Calendly badge widget end -->
+```{r, echo=F, eval=T, error=F, warning=F, results='asis'}
+
+htmltools::HTML(readr::read_file(here::here("html", "calendly.html")))
+```
 
 
 ```{=html}
@@ -138,9 +140,6 @@ feather.replace()
 
 </center>
 
-\  
-
----
 
 \  
 
@@ -157,9 +156,27 @@ feather.replace()
 
 # `r params$header1`
 
-This workflow outlines an automated outbound calling process using a voice AI agent, integrated with client database systems like Airtable or ClickUp. Voice agent is triggered to make calls, following a personalised prompt (Open AI). Outcomes are logged back into the database for tracking and review. The voice agent operates with a clearly defined prompt --- introduction, confirms business details, asks relevant questions, suggests next steps --- and is trained to handle objections, offer helpful previews of templates or products with no sales pressure. The review phase includes assessing results and refining the process as needed.      
+An automated outbound calling process using a voice AI agent, integrated with client database systems like Airtable or ClickUp. Voice agent is triggered to make calls, following a personalised prompt (Open AI). Outcomes are logged back into the database for tracking and review. The voice agent operates with a clearly defined prompt --- introduction, confirms business details, asks relevant questions, suggests next steps --- and is trained to handle objections, offer helpful previews of templates or products with no sales pressure. The review phase includes assessing results and refining the process as needed.      
+
 \  
 
+---
+
+\  
+
+# `r params$header1b`  
+
+#  {.tabset .tabset-fade }
+
+## Service provider  \
+## Sales teams \ 
+## Recruitment agency \  
+## Brick and mortar business \  
+## Sport clubs \  
+## Tourism agency \  
+
+
+# `r params$header1d` 
 
 1. Connect to client database (Airtable, Clickup)    
 Connect to your custom client database app 
@@ -175,6 +192,20 @@ Record the outcomes of each call in database (Clickup, Auirtable)
 
 5. Review/adjust summary    
 Assess the results and make necessary adjustments to the workflow as needed    
+
+\  
+
+Option 2     
+
+1. Set up voice agent to handle incoming calls/applications/EOIs   
+Qualify leads with set screening questions based on user convenience (timezone agnostic)    
+
+2. Store transcript in database (Airtable, Clickup)  
+Link to your current database and auto collect relevant responses  
+
+3. Analyse transcript by team members/HR  
+Pass to people to filter final shortlist and book call/interview      
+
 
 \  
 
@@ -199,10 +230,12 @@ Adapt to questions or objections with honesty and appreciation, no pressure
 6. Scenario triage  
 Show pre-built templates/products, no cost or sales, only a helpful preview    
 
+\  
 
 ---
 
 \  
+
 
 # `r params$header2`  
 
@@ -221,11 +254,12 @@ knitr::include_graphics(c(
   ))
 ```
 
-\    
+\  
 
 ---
 
-\  
+\     
+
 
 # `r params$header3`
 \  
@@ -305,8 +339,7 @@ knitr::include_graphics(c(
 
 ---
 
-\    
-
+\  
 
 # `r params$header5`
 
@@ -323,8 +356,6 @@ Example of automated workflow (replace with your own tasks/apps)
 <center>
 ![](img/flow2.png)    
 </center>
-
-
 
 
 #

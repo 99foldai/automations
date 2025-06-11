@@ -1,0 +1,29 @@
+<div class="widget-container">
+    <div class="section-heading">Time and tasks</div>
+    <div class="flex-row">
+      <div class="data-box">
+        <div class="data-label">Task hours (p/w)</div>
+        <div class="data-value">10</div>
+      </div>
+      <div class="data-box">
+        <div class="data-label">Average client value ($)</div>
+        <div class="data-value">2,500</div>
+      </div>
+      <div class="data-box">
+        <div class="data-label">Average close rate (%)</div>
+        <div class="data-value">30</div>
+      </div>
+    </div>
+    <div class="section-heading">Outcomes</div>
+    <div class="flex-row">
+      <div class="data-box">
+        <div class="data-label">Hours saved (p/m)</div>
+        <div class="data-value">40</div>
+      </div>
+      <div class="data-box">
+        <div class="data-label">Annual ROI ($)</div>
+        <div class="data-value">50,000</div>
+      </div>
+    </div>
+  </div>
+
