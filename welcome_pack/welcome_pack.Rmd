@@ -208,7 +208,6 @@ htmltools::HTML(readr::read_file(here::here("html", "calendly_inline.html")))
 \  
 
 
-
 # `r params$header1d`  
 
   
