@@ -1,6 +1,6 @@
 ---
 params:
-  title: "Automated SDR (client onboarding)"     
+  title: "Automated SDR <br> (client onboarding)"     
   subtitle: "Gmail, Google Drive, Clickup, Airtable, Slack"    
   author: "99fold"
   email: "matt@99foldai.com"
@@ -104,12 +104,10 @@ knitr::opts_chunk$set(
 ```
 
 \  
-\  
 
 # [`r params$title`]{style="font-size: 200%;"}
-# [`r params$subtitle`]{style="font-size: 150%;"}
+# [`r params$subtitle`]{style="font-size: 100%;"}
 
-\  
 \      
 
 <center> 
@@ -223,6 +221,13 @@ Email final results, updates, or next steps to team and client email channels
 
 \  
 
+```{r, echo=F, eval=T, error=F, warning=F, results='asis'}  
+htmltools::HTML(readr::read_file(here::here("html", "calendly_inline.html"))) 
+```   
+
+\    
+  
+
 ---
 
 \  
@@ -308,6 +313,12 @@ knitr::include_graphics(c(
 
 ---
 
+\  
+
+```{r, echo=F, eval=T, error=F, warning=F, results='asis'}  
+htmltools::HTML(readr::read_file(here::here("html", "calendly_inline.html"))) 
+```   
+
 \    
 
 # `r params$header4`
@@ -348,6 +359,16 @@ Example of automated workflow (replace with your own tasks/apps)
 #
 
 
+
+
+\  
+
+```{r, echo=F, eval=T, error=F, warning=F, results='asis'}
+
+htmltools::HTML(readr::read_file(here::here("html", "calendly_inline.html")))
+```
+
+\
 
 
 

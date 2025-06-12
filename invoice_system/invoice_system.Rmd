@@ -101,13 +101,11 @@ knitr::opts_chunk$set(
 ```
 
 \  
-\  
 
 # [`r params$title`]{style="font-size: 200%;"}
-# [`r params$subtitle`]{style="font-size: 150%;"}
+# [`r params$subtitle`]{style="font-size: 100%;"}
 
-\  
-\      
+\       
 
 <center> 
 [`r params$author` | `r params$email` | `r params$social`]{style="font-size: 120%; color:`r params$secondary`;"} 
@@ -341,6 +339,16 @@ Integrate payment vendor cycle
 #
 
 
+
+
+\  
+
+```{r, echo=F, eval=T, error=F, warning=F, results='asis'}
+
+htmltools::HTML(readr::read_file(here::here("html", "calendly_inline.html")))
+```
+
+\
 
 
 

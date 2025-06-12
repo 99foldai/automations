@@ -103,13 +103,11 @@ knitr::opts_chunk$set(
 ```
 
 \  
-\  
 
 # [`r params$title`]{style="font-size: 200%;"}
-# [`r params$subtitle`]{style="font-size: 150%;"}
+# [`r params$subtitle`]{style="font-size: 100%;"}
 
-\  
-\      
+\        
 
 <center> 
 [`r params$author` | `r params$email` | `r params$social`]{style="font-size: 120%; color:`r params$secondary`;"} 
@@ -209,7 +207,18 @@ Download the updated content from the database to a local drive for backup and o
 7. Share to Team + Customers      
 Distribute the content to team members and customers, ensuring everyone has access to the latest information.  
 
+
+
 \  
+
+```{r, echo=F, eval=T, error=F, warning=F, results='asis'}
+
+htmltools::HTML(readr::read_file(here::here("html", "calendly_inline.html")))
+```
+
+\  
+
+  
 
 ---
 
@@ -297,7 +306,18 @@ knitr::include_graphics(c(
 
 ---
 
-\    
+
+
+\  
+
+```{r, echo=F, eval=T, error=F, warning=F, results='asis'}
+
+htmltools::HTML(readr::read_file(here::here("html", "calendly_inline.html")))
+```
+
+\  
+
+  
 
 # `r params$header4`
 
@@ -331,6 +351,18 @@ Example of automated workflow (replace with your own tasks/apps)
 
 
 #
+
+
+
+
+\  
+
+```{r, echo=F, eval=T, error=F, warning=F, results='asis'}
+
+htmltools::HTML(readr::read_file(here::here("html", "calendly_inline.html")))
+```
+
+\  
 
 
 

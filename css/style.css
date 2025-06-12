@@ -27,7 +27,7 @@ h1, h4{
 }
 
 h1 {
-  font-size: 200%;
+  font-size: 300%;
   color: #284e36;
 }
 
@@ -61,3 +61,61 @@ img{
   height: 100px;
   color: #284e36;
 }
+
+  .widget-container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+      text-align: center;
+    }
+    .section-heading {
+      font-size: 1.5em;
+      margin: 20px 0 10px;
+    }
+    .flex-row {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+      margin-bottom: 30px;
+    }
+    .data-box {
+      flex: 1 1 200px;
+      background: #f9f9f9;
+      
+      color: #284e36;
+      padding: 20px;
+      border-radius: 12px;
+      /*box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);*/
+      border: 3px solid #284e36; /* Added border color and thickness */
+    }
+    .data-label {
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+    .data-value {
+      font-size: 5em;
+      color: #284e36;
+    }
+
+
+.center-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .calendly-button {
+      background-color: #284e36;
+      color: #ffffff;
+      border: none;
+      border-radius: 50px;
+      padding: 15px 30px;
+      font-size: 1.2em;
+      cursor: pointer;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      transition: 0.3s;
+    }
+    .calendly-button:hover {
+      background-color: #1f3c2b;
+    }
+    

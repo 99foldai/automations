@@ -108,14 +108,11 @@ knitr::opts_chunk$set(
 ```
 
 \  
-\  
 
 # [`r params$title`]{style="font-size: 200%;"}
-# [`r params$subtitle`]{style="font-size: 150%;"}
+# [`r params$subtitle`]{style="font-size: 100%;"}
 
-\  
-\      
-
+\   
 
 
 <center> 
@@ -199,6 +196,17 @@ source(here::here("r","roi.R"))
 ```{=html}
 <div class="widget-container"><div class="section-heading">Time and tasks</div><div class="flex-row"><div class="data-box"><div class="data-label">Task hours (p/w)</div><div class="data-value"> `r task_hours_pw` </div></div><div class="data-box"><div class="data-label">Average client value ($)</div><div class="data-value">`r paste0("$",client_value)`</div></div><div class="data-box"><div class="data-label">Average close rate (%)</div><div class="data-value">`r params$roirate`</div></div></div><div class="section-heading">Outcomes</div><div class="flex-row"><div class="data-box"><div class="data-label">Hours saved (p/m)</div><div class="data-value">`r hours_saved_pm `</div></div><div class="data-box"><div class="data-label">Annual topline ROI ($)</div><div class="data-value">`r annual_roi`</div></div></div></div>
 ```
+
+
+\  
+
+```{r, echo=F, eval=T, error=F, warning=F, results='asis'}
+
+htmltools::HTML(readr::read_file(here::here("html", "calendly_inline.html")))
+```
+ 
+\  
+
 
 
 # `r params$header1d`  
@@ -293,7 +301,7 @@ knitr::include_graphics(c(
   ))
 ```
 
-\    
+\  
 
 ---
 
@@ -354,9 +362,19 @@ knitr::include_graphics(c(
 
 \  
 
+
 ---
 
-\    
+
+\  
+
+```{r, echo=F, eval=T, error=F, warning=F, results='asis'}
+
+htmltools::HTML(readr::read_file(here::here("html", "calendly_inline.html")))
+```
+ 
+\  
+  
 
 # `r params$header4`
 
@@ -396,6 +414,18 @@ Example of automated workflow (replace with your own tasks/apps)
 
 
 #
+
+
+
+
+\  
+
+```{r, echo=F, eval=T, error=F, warning=F, results='asis'}
+
+htmltools::HTML(readr::read_file(here::here("html", "calendly_inline.html")))
+```
+ 
+\  
 
 
 

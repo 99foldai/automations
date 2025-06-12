@@ -101,13 +101,11 @@ knitr::opts_chunk$set(
 ```
 
 \  
-\  
 
 # [`r params$title`]{style="font-size: 200%;"}
-# [`r params$subtitle`]{style="font-size: 150%;"}
+# [`r params$subtitle`]{style="font-size: 100%;"}
 
-\  
-\      
+\     
 
 <center> 
 [`r params$author` | `r params$email` | `r params$social`]{style="font-size: 120%; color:`r params$secondary`;"} 
@@ -158,11 +156,13 @@ feather.replace()
 
 An automated outbound calling process using a voice AI agent, integrated with client database systems like Airtable or ClickUp. Voice agent is triggered to make calls, following a personalised prompt (Open AI). Outcomes are logged back into the database for tracking and review. The voice agent operates with a clearly defined prompt --- introduction, confirms business details, asks relevant questions, suggests next steps --- and is trained to handle objections, offer helpful previews of templates or products with no sales pressure. The review phase includes assessing results and refining the process as needed.      
 
+
 \  
 
 ---
 
 \  
+
 
 # `r params$header1b`  
 
@@ -174,6 +174,7 @@ An automated outbound calling process using a voice AI agent, integrated with cl
 ## Brick and mortar business \  
 ## Sport clubs \  
 ## Tourism agency \  
+
 
 
 # `r params$header1d` 
@@ -232,10 +233,16 @@ Show pre-built templates/products, no cost or sales, only a helpful preview
 
 \  
 
----
+```{r, echo=F, eval=T, error=F, warning=F, results='asis'}
+
+htmltools::HTML(readr::read_file(here::here("html", "calendly_inline.html")))
+```
 
 \  
 
+---
+
+\  
 
 # `r params$header2`  
 
@@ -318,6 +325,12 @@ knitr::include_graphics(c(
 
 ---
 
+\  
+
+```{r, echo=F, eval=T, error=F, warning=F, results='asis'}  
+htmltools::HTML(readr::read_file(here::here("html", "calendly_inline.html"))) 
+```   
+
 \    
 
 # `r params$header4`
@@ -360,6 +373,15 @@ Example of automated workflow (replace with your own tasks/apps)
 
 #
 
+
+\  
+
+```{r, echo=F, eval=T, error=F, warning=F, results='asis'}
+
+htmltools::HTML(readr::read_file(here::here("html", "calendly_inline.html")))
+```
+
+\
 
 
 
