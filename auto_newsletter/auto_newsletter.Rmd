@@ -322,15 +322,13 @@ htmltools::HTML(readr::read_file(here::here("html", "calendly_inline.html")))
 # `r params$header4`
 
 ### Tasks      
-- Auto invoice reminders to pending unpaid client invoices      
-- Linked to your own database/system    
-- Auto update invoices with status linked to payment account e.g. Stripe        
+- Generate and schedule an automated newsletter         
+- Pull only latest and relevant from social sites     
+- Update mailing list database with content    
 
 ### Benefits        
-- Save you $1000's per year in lost invoicing       
-- Eliminate manual checking and human error with invoice retrieval and collection     
- 
-
+- Automated and up to date content for an automated mailing list           
+- Save time and resources in sourcing content material    
 
 \  
 
