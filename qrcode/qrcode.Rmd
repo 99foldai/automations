@@ -182,7 +182,6 @@ The workflow is designed to streamline the process of collecting and managing cl
 ## Sport clubs \  
 ## Tourism agency \  
 ## Digital design business \  
-## Service provider  \
 ## Brand strategist \ 
 
 
@@ -202,6 +201,12 @@ The workflow is designed to streamline the process of collecting and managing cl
 ---
 
 \  
+
+```{r, echo=F, eval=T, error=F, warning=F, results='asis'}  
+htmltools::HTML(readr::read_file(here::here("html", "calendly_inline.html"))) 
+```   
+
+\
 
 # `r params$header2`  
 
@@ -284,6 +289,12 @@ knitr::include_graphics(c(
 \  
 
 ---
+
+\  
+
+```{r, echo=F, eval=T, error=F, warning=F, results='asis'}  
+htmltools::HTML(readr::read_file(here::here("html", "calendly_inline.html"))) 
+```   
 
 \    
 

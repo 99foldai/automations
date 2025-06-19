@@ -212,6 +212,12 @@ Dispatch automated emails to clients regarding their invoices and payment remind
 
 \  
 
+```{r, echo=F, eval=T, error=F, warning=F, results='asis'}  
+htmltools::HTML(readr::read_file(here::here("html", "calendly_inline.html"))) 
+```   
+
+\
+
 # `r params$header2`  
 
 \  
@@ -291,7 +297,13 @@ knitr::include_graphics(c(
 
 ---
 
-\    
+\  
+
+```{r, echo=F, eval=T, error=F, warning=F, results='asis'}  
+htmltools::HTML(readr::read_file(here::here("html", "calendly_inline.html"))) 
+```   
+
+\  
 
 # `r params$header4`
 

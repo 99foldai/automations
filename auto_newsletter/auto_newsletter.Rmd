@@ -206,23 +206,17 @@ Download the updated content from the database to a local drive for backup and o
 
 7. Share to Team + Customers      
 Distribute the content to team members and customers, ensuring everyone has access to the latest information.  
-
-
-
-\  
-
-```{r, echo=F, eval=T, error=F, warning=F, results='asis'}
-
-htmltools::HTML(readr::read_file(here::here("html", "calendly_inline.html")))
-```
-
-\  
-
   
 
 ---
 
 \  
+
+```{r, echo=F, eval=T, error=F, warning=F, results='asis'}  
+htmltools::HTML(readr::read_file(here::here("html", "calendly_inline.html"))) 
+```   
+
+\
 
 # `r params$header2`  
 
@@ -317,7 +311,6 @@ htmltools::HTML(readr::read_file(here::here("html", "calendly_inline.html")))
 
 \  
 
-  
 
 # `r params$header4`
 
