@@ -1,0 +1,185 @@
+---
+title: "Untitled"
+output: html_document
+date: "2025-06-20"
+---
+
+Streamline Spending: Automate Expense Tracking from Gmail to Google Sheets
+
+
+
+This document outlines a workflow designed to automatically extract spending history from Gmail and populate a Google Sheet. By leveraging email triggers, data extraction, and structured parsing, this system streamlines expense tracking, saving time and improving financial oversight. The following sections detail the flow diagram, step-by-step instructions, key tasks, and business benefits.
+
+
+
+Workflow Diagram
+
+
+
+graph LR
+    A[Get Invoice] --> B(Extract Invoice);
+    C[Get Payment] --> D(Extract Payment);
+    B --> E{Merge};
+    D --> E;
+    E --> F[HTML];
+    F --> G(Split Out);
+    G --> H[Structured Output Parser];
+    H --> I((Google Sheets));
+    style A font-family: Comfortaa
+    style B font-family: Comfortaa
+    style C font-family: Comfortaa
+    style D font-family: Comfortaa
+    style E font-family: Comfortaa
+    style F font-family: Comfortaa
+    style G font-family: Comfortaa
+    style H font-family: Comfortaa
+    style I font-family: Comfortaa
+
+
+
+
+
+
+
+
+Step-by-Step Instructions
+
+
+
+
+
+
+
+Retrieve Emails: Fetch invoice and payment emails from specified Gmail labels.
+
+
+
+Extract Data: Pull relevant data from email attachments.
+
+
+
+Parse HTML: Extract spending data from HTML content.
+
+
+
+Split Data: Separate individual spending entries.
+
+
+
+Structure Output: Parse data into a structured format.
+
+
+
+Update Sheet: Add the structured data to a Google Sheet.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Tasks
+
+
+
+
+
+
+
+Automatically log expenses from Gmail receipts.
+
+
+
+Categorize spending based on email content.
+
+
+
+Create a real-time spending dashboard in Google Sheets.
+
+
+
+Benefits
+
+
+
+
+
+
+
+Reduce Manual Entry: Automate data entry, saving employee time.
+
+
+
+Improve Accuracy: Minimize errors associated with manual data input.
+
+
+
+Enhance Financial Visibility: Gain real-time insights into spending patterns.

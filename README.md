@@ -1,5 +1,19 @@
 # Automations  
 
+## [Content strategist (client and RFP pipeline)](https://99foldai.github.io/automations/content_strategist/content_strategist)                  
+
+### Tasks
+- Automate RFP intake and assignment with multiple teams and clients    
+- Streamlines collaboration, reduce manual follow-ups, and maintain visibility into proposal progress   
+- Accelerate proposal creation and reporting through automated triggers integrated with client data portal      
+
+### Benefits
+- Faster proposal turnaround leads to more closed deals     
+- Streamlined workflow reduces wasted time and effort    
+- Clear communication and alignment across teams    
+
+******  
+
 
 ## [Agency welcome pack](https://99foldai.github.io/automations/welcome_pack/welcome_pack)                  
 
