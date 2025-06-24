@@ -282,7 +282,7 @@ knitr::include_graphics(c(
   </div>
 </div>
 
-\  
+\    
 
 <!-- left justified image -->
 <div class = "row">

@@ -1,6 +1,6 @@
 ---
 params:
-  title: "LinkedIn profile scraper to mailing list database via QR code reader"       
+  title: "LinkedIn profile audit (leads database)"         
   subtitle: "Telegram, Uniqode, LinkedIn, Notion, Google Docs"        
   author: "99fold"
   email: "matt@99foldai.com"
@@ -18,14 +18,14 @@ params:
   header5: "Example"
   here: "r"
   imgdir: "img"
-  app1: "telegram.png"
-  app2: "li.png"
-  app3: "notion.png"
-  app4: "gsheet.png"
-  app5: "gdrive.png"
-  img1: "linkedin.png"
-  img2: "telegram2.png"
-  img3: "clickup.png"
+  app1: "app1.png"
+  app2: "app2.png"
+  app3: "app3.png"
+  app4: "app4.png"
+  app5: "app5.png"
+  img1: "img1.png"
+  img2: "img2.png"
+  img3: "img3.png"
   img4: ""
   img5: ""
   img6: ""
@@ -158,7 +158,7 @@ feather.replace()
 
 # `r params$header1`
 
-Extracting LinkedIn profile data using a QR code scanner (Telegram, Whatsapp), updating a mailing list database (Notion, Clickup, Airtable), auto draft a personalised email/doc with your own copy/CTA, and save to the cloud (Google Drive), then initiate an auto email campaign from the client database.   
+Extracting LinkedIn profile data using a QR code scanner (Telegram, Whatsapp), update a mailing list database (Notion, Clickup, Airtable), auto draft a personalised email/doc with your own copy/CTA, and save to the cloud (Google Drive), then initiate an auto email campaign from the client database.     
 
 The workflow is designed to streamline the process of collecting and managing client data by enhancing efficiency in outreach efforts using automated app integrations and auto scheduling.  
 
@@ -321,6 +321,12 @@ htmltools::HTML(readr::read_file(here::here("html", "calendly_inline.html")))
 # `r params$header5`
 
 Example of automated workflow (replace with your own tasks/apps)      
+
+<center>
+![](img/flow.png)    
+</center>
+
+\  
 
 <center>
 ![](img/flow2.png)    
