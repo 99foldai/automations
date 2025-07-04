@@ -210,11 +210,11 @@ htmltools::HTML(readr::read_file(here::here("html", "calendly_inline.html")))
 
 2. The seller follows up by providing additional materials such as PDFs and meeting context to help us understand the ask in the email chain     
 
-3. Based on the budget and creative scope, my lead tags me on the email as the assigned Content Strategist + a Marketer is assigned.     
+3. Based on the budget and creative scope, Content Strategist and a Marketer is assigned and introduced to client via auto alerts
 
 4. A brainstorm meeting is scheduled via Google Calendar by the Marketer, with all materials included in the calendar invite    
 
-5. After the sales brainstorm, input the program details into Airtable and connect with the production team to align on the direction of the program and begin generating the proposal.     
+5. After the sales brainstorm, input the program details into Airtable and connect with the production team to align on the direction of the program and begin generating the proposal       
 
  
 
