@@ -1,5 +1,20 @@
 # Automations  
 
+## [Leads outreach automator](https://99foldai.github.io/automations/outreach/outreach)                    
+
+### Tasks
+- Hands-off automated personalised cold email outreach using integrated apps.    
+- Enrich lead data with hyper-personalised intros  
+- Streamline lead integration into outreach campaigns without manual intervention.    
+
+### Benefits  
+- Improve conversion rates with lower manual input.      
+- Engage leads with relevant and tailored messaging.  
+- Automate repetitive tasks, freeing up valuable time.    
+
+******  
+
+
 ## [Content strategist (client and RFP pipeline)](https://99foldai.github.io/automations/content_strategist/content_strategist)                  
 
 ### Tasks
